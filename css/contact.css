@@ -1,0 +1,96 @@
+/* Contact Section */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    place-items: center;
+    text-align: center;
+    row-gap: 50px;
+    position: relative;
+}
+
+.contact-fields {
+    grid-column: 1 / 4;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-person-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-person-info>input {
+    flex: 1;
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    border: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+.contact-person-info>input:focus {
+    border: 1px solid var(--main-color);
+}
+
+.contact-fields .sub {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+.contact-fields .msg {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    border: 1px solid transparent;
+    outline: none;
+    transition: border 0.3s;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-fields .sub:focus,
+.contact-fields .msg:focus {
+    border: 1px solid var(--main-color);
+}
+
+.contact-fields .btn {
+    display: block;
+    margin: 25px auto;
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-fields .btn:hover {
+    background-color: var(--main-color);
+}
+
+.contact-item i {
+    color: var(--main-color);
+}
+
+.contact-item .contact-item-type {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.contact-item .contact-item-desc {
+    color: var(--gray-color);
+    font-size: 15px;
+}

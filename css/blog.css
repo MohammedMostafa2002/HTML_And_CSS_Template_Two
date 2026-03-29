@@ -1,0 +1,53 @@
+/*Blog Page*/
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+}
+
+.blog-item {
+    background: white;
+}
+
+
+.blog-item-img img {
+
+    width: 100%;
+}
+
+.blog-info {
+    padding: 20px;
+}
+
+.blog-list {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.blog-list li {
+
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+
+.blog-list li i {
+    color: var(--main-color);
+}
+
+.blog-item .blog-item-title {
+
+    margin: 20px 0;
+}
+
+.blog-item-disc {
+    line-height: 1.5;
+    color: #999;
+}
+
+.blog-link {
+
+    color: var(--main-color);
+}

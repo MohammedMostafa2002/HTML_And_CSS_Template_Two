@@ -1,0 +1,244 @@
+/*  index-فهرس
+    1- Common Styles
+    2- General Styles
+    3- Sections Styles
+        3.0 Header Section
+        3.1 Home Section 
+        3.2 About Section 
+        3.3 Portfloio Section 
+        3.4 Services Section 
+        3.5 Prices Section 
+        3.6 Team Section 
+        3.7 Blog Page
+        3.8 Contact Section 
+        3.9 Footer Section
+/*
+
+
+/* 1- Common Styles */
+/* 
+
+- container
+- overlay
+- section header
+- opacity hover
+- section padding
+- hover effect 1 (left to right)
+- hover effect 2 (top to bottom)
+
+*/
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hover-opacity {
+
+    transition: opacity 0.5s;
+}
+
+.hover-opacity:hover {
+
+    opacity: 0.8;
+}
+
+
+.ltr-effect,
+.tb-effect {
+
+    position: relative;
+}
+
+
+.ltr-effect::after,
+.tb-effect::after {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    z-index: -1;
+
+}
+
+.ltr-effect::after {
+
+    width: 0;
+    transition: width 0.5s;
+
+}
+
+.tb-effect::after {
+    height: 0;
+    transition: height 0.5s;
+}
+
+.ltr-effect:hover::after {
+
+    width: 100%;
+}
+
+
+.tb-effect:hover::after {
+
+    height: 100%;
+}
+
+
+/* 2- General Css Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --main-color: #6195ff;
+    --gray-color: #999;
+    --white-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+}
+
+.container {
+
+    width: 80%;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: montserrat, sans-serif;
+}
+
+Button {
+    font-family: inherit;
+    /*inherit from body*/
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+ul {
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.pd-y {
+
+    padding: 120px 0;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header .section-title {
+    font-size: 35px;
+}
+
+
+.section-header .line {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: var(--main-color);
+    margin: 0 auto 70px auto;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+
+    .about-content,
+    .service-content,
+    .pricing-plans,
+    .team-content,
+    .blog-content {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .portfolio-content {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .numbers-items {
+        flex-wrap: wrap;
+    }
+    
+    .number-item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .contact-content {
+        grid-template-columns: repeat(1, 1fr) !important;
+        row-gap: 30px;
+    }
+    
+    .contact-fields {
+        grid-column: 1 / 2 !important;
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content,
+    .service-content,
+    .pricing-plans,
+    .team-content,
+    .blog-content,
+    .portfolio-content,
+    .advanteges-content,
+    .testimonial-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    .number-item {
+        width: 100%;
+    }
+
+    .contact-person-info {
+        flex-direction: column;
+    }
+
+    .home .title {
+        font-size: 2.5rem;
+    }
+    
+    .home .home-desc {
+        font-size: 14px;
+    }
+}

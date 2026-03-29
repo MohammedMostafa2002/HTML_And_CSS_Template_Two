@@ -1,0 +1,85 @@
+/* Advanteges Section */
+
+.section-header.left {
+
+    text-align: left;
+    margin-top: 10px;
+}
+
+.left .line {
+
+    margin: 0 0 40px 0;
+}
+
+.advanteges-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+
+.advanteges-item-desc {
+
+    line-height: 1.5;
+    font-size: 17px;
+    color: #999;
+    padding-right: 20px;
+
+}
+
+
+.advantegeslist {
+    list-style: none;
+}
+
+.advantegeslist li {
+
+    color: #999;
+}
+
+.advantegeslist li i {
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    margin-right: 5px;
+}
+
+
+.advanteges-item-img img {
+    width: 100%;
+}
+
+
+.advanteges-bullets {
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.advanteges-bullets li {
+
+    width: 10px;
+    height: 10px;
+    background-color: #e8e8e8;
+    display: inline-block;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+
+.advanteges-bullets li.active {
+
+    background-color: var(--main-color);
+
+
+}
+
+.advanteges-bullets li:hover {
+
+    background-color: var(--main-color);
+
+}

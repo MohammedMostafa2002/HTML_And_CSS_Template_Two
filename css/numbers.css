@@ -1,0 +1,50 @@
+/* numbers Section */
+
+.numbers {
+    position: relative;
+    background-image: url(../images/background/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+.numbers-items {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 80px 0;
+
+
+}
+
+.number-item .icon {
+
+    color: var(--main-color);
+
+    margin: 15px;
+
+}
+
+.number-item-title {
+
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+.number-item-text {
+    color: white;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .numbers {
+        height: auto;
+    }
+}

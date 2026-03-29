@@ -1,0 +1,43 @@
+/* About Section */
+
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+}
+
+.about-item {
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 20px;
+}
+
+.about-item:hover .about-item-title {
+    color: white;
+}
+
+.about-item .icon {
+
+    color: var(--main-color);
+}
+
+
+.about-item-title {
+
+    transition: color 0.5s;
+
+}
+
+
+.about-item-desc {
+    line-height: 1.6;
+    color: #999;
+}
+
+
+.about-item-link {
+
+    color: var(--main-color);
+
+}
